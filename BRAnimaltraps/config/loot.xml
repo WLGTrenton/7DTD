@@ -1,0 +1,48 @@
+<configs>
+<insertBefore xpath="/lootcontainers/lootcontainer[@id='1']">
+<!--Start Loot Groups for Traps-->
+<lootgroup name="caughtVulture" count="all">
+	<item name="foodRottingFlesh" count="0,2"/>
+	<item name="resourceFeather" count="0,23"/>/>
+	<item name="resourceFemur" count="0,2"/>/>
+</lootgroup>
+
+<lootgroup name="caughtZombie" count="all">
+	<item name="foodRottingFlesh" count="0,2"/>
+	<item group="clothes" prob="0.7"/>
+	<item name="resourceFemur" count="0,2"/>/>
+</lootgroup>
+
+<lootgroup name="QuailTrap" count="all">
+	<item name="foodEgg" count="0,2"/>
+	<item name="foodRawMeat" count="1,5" />
+	<item name="resourceFeather" count="0,23"/>
+</lootgroup>
+
+<lootgroup name="caughtrabbit" count="all">
+	<item name="foodRawMeat" count="1,5" />
+	<item name="resourceLeather" count="0,1"/>
+		<item name="resourceFemur" count="0,1"/>
+</lootgroup>
+</insertBefore>
+
+<!--End Loot Groups for Traps-->
+<append xpath="/lootcontainers">
+<!--Start QuailTrap Loot-->
+<lootcontainer id="198" count="1" size="4,2"  destroy_on_close="false" sound_open="Animals/Chicken/chickenpain" sound_close="Animals/Chicken/chickendeath">
+	<item group="QuailTrap" count="1"/>
+		<item group="caughtVulture" count="1" prob=".1"/>
+			<item group="junk" count="1" prob=".05"/>
+</lootcontainer>
+<!--End Quailtrap Loot -->
+
+<!--Start RabbitTrap Loot -->
+<lootcontainer id="199" count="1" size="4,2" sound_open="Animals/rabbitpain" sound_close="Animals/rabbitdeath">
+	<item group="caughtrabbit" count="1"/>
+		<item group="caughtZombie" count="1" prob=".1"/>
+			<item group="junk" count="1" prob=".05"/>
+</lootcontainer>
+<!--End RabbitTrap Loot -->
+
+</append>
+</configs>

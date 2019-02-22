@@ -1,0 +1,41 @@
+<configs>
+<insertAfter xpath="/blocks/block[@name='cntCar03SedanDamage2']/property[@name='CanDecorateOnSlopes']" >
+	<property name="DowngradeBlock" value="CarRespawner_AirBlockStage"/>
+</insertAfter>
+<append xpath="/blocks">
+        <block name="CarRespawner_AirBlockStage">
+            <property name="IsDeveloper" value="true" />
+            <property name="Class" value="PlantGrowing" />
+            <property name="Material" value="Mair"/>
+            <property name="Shape" value="Invisible"/>
+            <property name="Texture" value="250"/>
+            <property name="CanMobsSpawnOn" value="false" />
+            <drop event="Destroy" count="0" />
+            <property name="IsTerrainDecoration" value="true" />
+            <property name="PlantGrowing.Next" value="cntCar03SedanDamage0" />
+            <property name="PlantGrowing.GrowthRate" value="5" />
+            <!-- The value was set at 270 before the change to 8 day respawn for cars to come back which is 720 -->
+            <!-- amount of days for respawn 90 equals 1 day-->
+            <property name="PlantGrowing.FertileLevel" value="0" />
+            <property name="PlantGrowing.IsRandom" value="false" />
+        </block>
+</append>
+</configs>
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
