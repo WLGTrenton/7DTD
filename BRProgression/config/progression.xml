@@ -1,4 +1,3 @@
 <configs>
-<!-- * * * * * Player Lights * * * * * -->
-<set xpath="/progression/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked'and @tags'workbench,tableSaw,generatorbank,electricwirerelay,switch,ceilingLight01_player,gunCrossbow,gunCompoundBow,armorMiningHelmet']/@tags">workbench,tableSaw,generatorbank,electricwirerelay,switch,ceilingLight01_player,gunCrossbow,gunCompoundBow,armorMiningHelmet,porchLight04_player,porchLight04Brass_player,ceilingLight02_player,ceilingLight02Brass_player,ceilingLight04_player,ceilingLight05_player,ceilingLight05Brass_player,wallLight01_player,ceilingLight07_player</set>
+<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@tags='workbench,tableSaw,generatorbank,electricwirerelay,switch,ceilingLight01_player,gunCrossbow,gunCompoundBow,armorMiningHelmet']/@tags">,porchLight04_player,porchLight04Brass_player,ceilingLight02_player,ceilingLight02Brass_player,ceilingLight04_player,ceilingLight05_player,ceilingLight05Brass_player,wallLight01_player,ceilingLight07_player</append>
 </configs>
