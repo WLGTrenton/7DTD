@@ -1,7 +1,0 @@
-<!-- FasterAsphalt -->
-<configs>
-<insertAfter xpath="/blocks/block[@name='terrAsphalt']/property[@name='CanMobsSpawnOn']" >
-	<property name="BuffsWhenWalkedOn" value="RunningSmooth"/>
-</insertAfter>
-</configs>
-<!-- EndFasterAsphalt -->
