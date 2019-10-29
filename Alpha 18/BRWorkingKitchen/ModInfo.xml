@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="BRWorkingKitchen" />
+		<Description value="Adds Working Sink, Stove, WaterCooler, Microwave and other items." />
+		<Author value="Trenton" />
+		<Version value=".10" />
+		<Website value=""/>
+	</ModInfo>
+</xml>

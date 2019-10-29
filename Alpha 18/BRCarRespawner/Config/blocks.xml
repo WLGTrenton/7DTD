@@ -1,0 +1,165 @@
+<configs>
+	<append xpath="/blocks">	
+    <!-- CarRespawner-->
+		<block name="carRespawner">
+			<property name="CustomIcon" value="decoCarTireStack" />
+			<property name="CustomIconTint" value="09ff00"/>
+			<property name="Extends" value="decoEntityMetalMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mair"/>			
+			<property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="Invisible"/>
+            <property name="Texture" value="250"/>	
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" count="0" />	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="carsRandomHelper" />
+			<property name="PlantGrowing.GrowthRate" value="240" /><!-- Time to respawn, 60 is about 1 day based on default time -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+<!-- Short Bus Respawner-->
+		<block name="busSchoolShortRespawner">
+			<property name="CustomIcon" value="decoCarTireStack" />
+			<property name="CustomIconTint" value="09ff00"/>
+			<property name="Extends" value="decoEntityMetalMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mair"/>			
+			<property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="Invisible"/>
+            <property name="Texture" value="250"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" count="0" />	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusSchoolShort" />
+			<property name="PlantGrowing.GrowthRate" value="240" /><!-- Time to respawn, 60 is about 1 day based on default time -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+<!-- School Bus Respawner-->
+		<block name="busSchoolRespawner">
+			<property name="CustomIcon" value="decoCarTireStack" />
+			<property name="CustomIconTint" value="09ff00"/>
+			<property name="Extends" value="decoEntityMetalMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mair"/>			
+			<property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="Invisible"/>
+            <property name="Texture" value="250"/>		
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" count="0" />	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusSchool" />
+			<property name="PlantGrowing.GrowthRate" value="240" /><!-- Time to respawn, 60 is about 1 day based on default time -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+<!-- Shuttle Bus Respawner-->
+		<block name="busShuttleRespawner">
+			<property name="CustomIcon" value="decoCarTireStack" />
+			<property name="CustomIconTint" value="09ff00"/>
+			<property name="Extends" value="decoEntityMetalMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mair"/>			
+			<property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="Invisible"/>
+            <property name="Texture" value="250"/>	
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" count="0" />	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusShuttle" />
+			<property name="PlantGrowing.GrowthRate" value="240" /><!-- Time to respawn, 60 is about 1 day based on default time -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+<!-- ArmyTruck Respawner-->
+		<block name="armyTruckClosedRespawner">
+			<property name="CustomIcon" value="decoCarTireStack" />
+			<property name="CustomIconTint" value="09ff00"/>
+			<property name="Extends" value="decoEntityMetalMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mair"/>			
+			<property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="Invisible"/>
+            <property name="Texture" value="250"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" count="0" />	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntArmyTruckClosed" />
+			<property name="PlantGrowing.GrowthRate" value="240" /><!-- amount of days for respawn 60 equals 1 day -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+<!-- City Bus Respawner-->
+		<block name="busCityRespawner">
+			<property name="CustomIcon" value="decoCarTireStack" />
+			<property name="CustomIconTint" value="09ff00"/>
+			<property name="Extends" value="decoEntityMetalMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mair"/>			
+			<property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="Invisible"/>
+            <property name="Texture" value="250"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" count="0" />	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusCity" />
+			<property name="PlantGrowing.GrowthRate" value="240" /><!-- amount of days for respawn 60 equals 1 day  -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+
+		<!-- Gore Block Respawner-->
+        <block name="goreRespawner">
+            <property name="IsDeveloper" value="true" />
+            <property name="Class" value="PlantGrowing" />
+			<property name="Extends" value="decoEntityMetalMaster"/>	
+            <property name="Material" value="Mair"/>            
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="Invisible"/>
+            <property name="Texture" value="250"/>    
+            <property name="CanMobsSpawnOn" value="false" />
+            <drop event="Destroy" count="0" />    
+                <property name="IsTerrainDecoration" value="true" />
+                <property name="PlantGrowing.Next" value="goreBlockAnimal" />
+                <property name="PlantGrowing.GrowthRate" value="2" /><!-- Time to respawn, 60 is about 1 day based on default time -->
+                <property name="PlantGrowing.FertileLevel" value="0" />
+                <property name="PlantGrowing.IsRandom" value="false" />
+        </block>
+
+
+	</append>	
+	<!-- Downgrade Blocks-->
+	<append xpath="/blocks/block[@name='cntCar03SedanDamage2Master']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append> 
+	
+	<append xpath="/blocks/block[@name='cntBusSchool']"> 
+		<property name="DowngradeBlock" value="busSchoolRespawner"/>
+	</append> 
+
+	<append xpath="/blocks/block[@name='cntBusSchoolShort']"> 
+		<property name="DowngradeBlock" value="busSchoolShortRespawner"/>
+	</append> 
+
+	<append xpath="/blocks/block[@name='cntBusShuttle']"> 
+		<property name="DowngradeBlock" value="busShuttleRespawner"/>
+	</append> 
+	
+	<append xpath="/blocks/block[@name='cntBusCity']"> 
+		<property name="DowngradeBlock" value="busCityRespawner"/>
+	</append> 
+
+	<append xpath="/blocks/block[@name='cntArmyTruckClosed']"> 
+		<property name="DowngradeBlock" value="armyTruckClosedRespawner"/>
+	</append>
+   <append xpath="/blocks/block[@name='goreBlockAnimal']"> 
+        <property name="DowngradeBlock" value="goreRespawner"/>
+    </append>  	
+</configs>

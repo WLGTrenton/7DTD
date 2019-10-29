@@ -1,0 +1,15 @@
+<!-- FasterAsphalt -->
+<configs>
+<append xpath="/buffs">
+<buff name="RunningSmooth">
+		<requirement name="EntityTagCompare" tags="player"/>
+		<stack_type value="replace"/>
+		<duration value="1"/>
+		<effect_group>
+				<passive_effect name="WalkSpeed" operation="perc_add" value="1"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".50"/>
+		</effect_group>
+	</buff>
+</append>
+</configs>
+<!-- EndFasterAsphalt -->

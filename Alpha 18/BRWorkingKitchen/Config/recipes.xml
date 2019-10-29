@@ -1,0 +1,22 @@
+<configs>
+<append xpath="/recipes">
+	<recipe name="WorkingStove" count="1" craft_area="workbench">
+		<ingredient name="resourceScrapPolymers" count="10"/>
+		<ingredient name="resourceMechanicalParts" count="1"/>
+		<ingredient name="resourceForgedIron" count="4"/>
+	</recipe>
+	
+<recipe name="drinkJarBoiledWater" count="1" craft_area="Watercooler" craft_time="5">
+	<ingredient name="drinkJarRiverWater" count="2"/>
+</recipe>
+
+<recipe name="drinkJarPureMineralWater" count="1" craft_area="Watercooler" craft_time="30" >
+	<ingredient name="drinkJarRiverWater" count="2"/>
+	<ingredient name="resourceCoal" count="1"/>
+	<ingredient name="resourceCloth" count="1"/>
+</recipe>
+
+
+
+</append>
+</configs>

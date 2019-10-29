@@ -1,0 +1,32 @@
+<configs>
+<append xpath="/items">
+<!-- Start ChickenCoop Items-->
+<item name="NestingBox">
+	<property name="CustomIcon" value="cntBirdnest"/>
+	<property name="CustomIconTint" value="139,69,19"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Msteel"/>
+	<property name="Weight" value="30"/>
+	<property name="Stacknumber" value="1"/> <!-- STK loot -->
+	<property name="EconomicValue" value="100"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
+<item name="ChickenCoopFeeder">
+	<property name="CustomIcon" value="bucketEmpty"/>
+	<property name="CustomIconTint" value="139,69,19"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Msteel"/>
+	<property name="Weight" value="30"/>
+	<property name="Stacknumber" value="1"/> <!-- STK loot -->
+	<property name="EconomicValue" value="100"/>
+	<property name="Group" value="Resources"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
+<!-- End ChickenCoop Items-->
+</append>
+</configs>

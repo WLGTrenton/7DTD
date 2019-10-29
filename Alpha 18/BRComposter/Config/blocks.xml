@@ -1,0 +1,53 @@
+<!-- Composter -->
+<configs>
+<append xpath="/blocks">
+<block name="Composter">
+	<property name="Class" value="Workstation"/>
+	<property name="CustomIcon" value="farmPlotBlock"/>
+	<property name="Material" value="Mstone_scrap"/>
+	<property name="MaxDamage" value="1200"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="farm_plot"/>
+	<property name="Texture" value="47,84,84,84,84,84"/>
+	<property name="RandomTintColor1" value="100,0,150" param1="forge"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ParticleName" value="forge"/>
+	<property name="ParticleOffset" value="0.5,0,0.5"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HeatMapStrength" value="4.5"/>
+	<property name="HeatMapTime" value="1200"/>
+	<property name="HeatMapFrequency" value="25"/>
+	<property name="CraftTimeMultiplier" value="0.5,1"/>
+	<property name="ActiveRadiusEffects" value="+heatSource(1)"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="Composter"/>
+	</property>
+	<property name="OpenSound" value="open_workbench"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="25"/>
+		<property name="resourceWood" value="50"/>
+	</property>
+	<property class="RepairItems">
+		<property name="rockSmall" value="50"/>
+		<property name="clayLump" value="50"/>
+		<property name="resourceInsulator" value="2"/>
+	</property>
+	<drop event="Harvest" name="rockSmall" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="rockSmall" count="20" tool_category="Disassemble"/>
+	<drop event="Harvest" name="clayLump" count="20" tool_category="Disassemble"/>
+	<drop event="Harvest" name="leather" count="5" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="destroyedStone" count="0" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="20"/>
+	<property name="Group" value="Basics,Building"/>
+	<property name="DescriptionKey" value="forgeDesc"/>
+	<property name="EconomicValue" value="214"/>
+</block>
+</append>
+</configs>
