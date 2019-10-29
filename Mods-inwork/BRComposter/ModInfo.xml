@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="BRComposter" />
+		<Description value="Adds Composter, allows for crafting of rotten meat, animal fat, and bones." />
+		<Author value="WLGTrenton" />
+		<Version value="1.0" />
+		<Website value=""/>
+	</ModInfo>
+</xml>

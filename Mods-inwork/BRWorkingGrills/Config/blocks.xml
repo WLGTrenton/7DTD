@@ -1,0 +1,60 @@
+<!-- Working Grills -->
+<configs>
+<append xpath="/blocks">
+        <block name="workinggasgrill">
+            <property name="Class" value="Campfire"/>
+            <property name="CustomIcon" value="cntGasGrillClosed"/> 
+            <property name="Material" value="Miron_scrap"/>
+            <property name="MaxDamage" value="100"/>
+            <property name="StabilitySupport" value="false"/> <!-- build restriction -->
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="Entities/LootContainers/GasGrill_FullPrefab"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="ParticleName" value="campfire"/>
+            <property name="ParticleOffset" value="0.5,0,0.5"/>
+            <property name="Stacknumber" value="1"/>
+            <property name="HeatMapStrength" value="1.5"/>
+            <property name="HeatMapTime" value="1200"/>
+            <property name="HeatMapFrequency" value="25"/>
+            <property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+            <property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+            <property class="Workstation">
+                <property name="CraftingAreaRecipes" value="campfire"/>
+                <property name="Modules" value="tools,output,fuel,input"/>
+                <property name="Collide" value="melee,bullet,arrow,rocket"/>
+            </property>
+            <property name="WorkstationIcon" value="ui_game_symbol_campfire" />
+            <property name="CraftActionName" value="lblContextActionCook" />
+            <property name="CraftIcon" value="ui_game_symbol_spatula" />
+            <property name="OpenSound" value="campfire_open" />
+            <property name="CloseSound" value="campfire_close" />
+            <property name="CraftSound" value="campfire_cook_click" />
+            <property name="CraftCompleteSound" value="campfire_complete_item" />
+            <property name="WorkstationJournalTip" value="campfireTip" />
+            <property class="RepairItems">
+                <property name="resourceForgedIron" value="10"/>
+                <property name="resourceMetalPipe" value="10"/>
+                <property name="resourceWood" value="40"/>
+            </property>
+            <drop event="Harvest" name="resourceScrapIron" count="80" tag="allHarvest"/>
+            <drop event="Harvest" name="resourceWood" count="16" tag="allHarvest"/>
+            <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+            <drop event="Harvest" name="resourceForgedIron" count="4" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceMetalPipe" count="4" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceWood" count="15" tag="salvageHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+            <property name="TakeDelay" value="15"/>
+            <property name="Group" value="Food/Cooking,Basics,Building"/>
+            <property name="DescriptionKey" value="campfireDesc"/>
+            <property name="EconomicValue" value="5"/>
+            <property name="EconomicBundleSize" value="1"/>
+            <property name="SellableToTrader" value="false"/>
+            <property name="FilterTags" value="fdecor,fother,ffurniture"/>
+            <property name="SortOrder1" value="70i0"/>
+        </block>
+</append>
+</configs>
+<!-- Working Grills -->

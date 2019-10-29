@@ -1,0 +1,36 @@
+<configs>
+<append xpath="/recipes">
+<!-- Start ChickenCoop -->
+<recipe name="ChickenCoop" count="1" craft_time="900">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceWood" count="10"/>
+	<ingredient name="resourceYuccaFibers" count="100"/>
+	<ingredient name="resourceNail" count="20"/>
+</recipe>
+<recipe name="NestingBox" count="1" craft_time="15" craft_area="workbench" >
+	<ingredient name="resourceWood" count="10"/>
+	<ingredient name="resourceYuccaFibers" count="50"/>
+	<ingredient name="resourceFeather" count="40"/>
+</recipe>
+<recipe name="ChickenCoopFeeder" count="1" craft_time="15" craft_area="workbench">
+	<ingredient name="resourceScrapPolymers" count="20"/>
+	<ingredient name="resourceDuctTape" count="4"/>
+	<ingredient name="resourceMetalPipe" count="8"/>
+</recipe>
+<!-- ChickenCoop Harvest Recipes -->
+
+<recipe name="foodRawMeat" count="5" craft_time="2400" craft_area="ChickenCoop">
+	<ingredient name="plantedCorn1" count="20"/>
+	<ingredient name="foodEgg" count="1"/>
+</recipe>
+
+<recipe name="resourceFeather" count="40" craft_time="180" craft_area="ChickenCoop" craft_tool="NestingBox">
+	<ingredient name="plantedCorn1" count="10"/>
+</recipe>
+
+<recipe name="foodEgg" count="4" craft_time="2400" craft_area="ChickenCoop" craft_tool="ChickenCoopFeeder">
+	<ingredient name="plantedCorn1" count="15"/>
+</recipe>
+<!-- End ChickenCoop -->
+</append>
+</configs>

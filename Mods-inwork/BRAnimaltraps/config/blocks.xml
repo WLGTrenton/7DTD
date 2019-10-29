@@ -1,0 +1,156 @@
+<!-- Start ChickenCoop -->
+<configs>
+<append xpath="/blocks">
+<!--MasterBlock that all other Trap Blocks Call to for base properties-->
+<block name="AnimalTrapMaster">
+	<property name="Class" value="ModelTree"/>
+	<property name="Extends" value="flagstoneMaster"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="MaxDamage" value="50"/>
+	<property name="StabilitySupport" value="false"/> 
+	<property name="Shape" value="New"/>
+	<property name="Frame"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="CustomIcon" value="cntCabinetOldSink"/>
+	<property name="CustomIconTint" value="255,0,0" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="TakeDelay" value="7"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="PlantGrowing.LightLevelStay" value="8"/>
+	<property name="IsPlant" value="true"/>
+	<property class="RepairItems">
+    <property name="scrapIron" value="5"/>
+    <property name="wood" value="3"/>
+    </property>
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="AnimalTrapMaster" count="0" tool_category="Disassemble"/>
+	<drop event="Fall" name="destroyedStone" count="0" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Food/Cooking,Basics,Building"/>
+	<property name="DescriptionKey" value="campfireDesc"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+</block>
+<!--End MasterBlock-->
+
+<!-- Player Blocks -->
+<block name="QuailTrap">
+	<property name="Extends" value="AnimalTrapMaster"/>
+	<property name="Model" value="wedge_stairs"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Mesh" value="cutout"/>
+	<property name="Texture" value="414,275,275,275,275,275"/>
+	<property name="HandleFace" value="Bottom"/>
+	<property name="IsPlant" value="true"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="BQuailTrap"/>
+		<property name="Item" value="AnimalFeed"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<property name="CustomIcon" value="woodFrameWedgeStairs"/>
+	<property name="CustomIconTint" value="100,100,100" />
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="QuailTrap" count="1" tool_category="Disassemble"/>
+	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Food/Cooking,Basics,Building"/>
+	<property name="DescriptionKey" value="campfireDesc"/>
+	<property name="EconomicValue" value="200"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="true"/>
+</block>
+
+<block name="RabbitTrap">
+	<property name="Extends" value="AnimalTrapMaster"/>
+	<property name="Model" value="wedge_tip_half"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Mesh" value="cutout"/>
+	<property name="Texture" value="275,275,68,68,414,68" />
+	<property name="HandleFace" value="Bottom"/>
+	<property name="IsPlant" value="true"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="BRabbitTrap"/>
+		<property name="Item" value="AnimalFeed"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<property name="CustomIcon" value="woodFrameWedge"/>
+	<property name="CustomIconTint" value="100,100,100" />
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="RabbitTrap" count="1" tool_category="Disassemble"/>
+	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Food/Cooking,Basics,Building"/>
+	<property name="DescriptionKey" value="campfireDesc"/>
+	<property name="EconomicValue" value="200"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="true"/>
+</block>
+<!-- End Player Blocks -->
+
+
+
+<!-- Static Block that Becomes the Loot Container-->
+<block name="BQuailTrap">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Extends" value="QuailTrap"/>
+	<property name="Class" value="ModelTree"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="SprungQuailTrap"/>
+	<property name="PlantGrowing.GrowthRate" value="2"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="CustomIcon" value="cntCabinetOldSink"/>
+	<property name="CustomIconTint" value="100,100,100" />
+</block>
+
+<block name="BRabbitTrap">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Extends" value="RabbitTrap"/>
+	<property name="Class" value="ModelTree"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="SprungRabbitTrap"/>
+	<property name="PlantGrowing.GrowthRate" value="2"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="CustomIcon" value="cntCabinetOldSink"/>
+	<property name="CustomIconTint" value="100,100,100" />
+	<property name="Texture" value="275,275,68,68,68,68" />
+</block>
+
+<!-- Loot Containers that can be reset to Static Block -->
+<block name="SprungQuailTrap">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Extends" value="QuailTrap"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="198"/>
+		<property class="UpgradeBlock">
+		<property name="ToBlock" value="BQuailTrap"/>
+		<property name="Item" value="AnimalFeed"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="1"/>
+	<property name="Texture" value="412,275,275,275,275,275"/>
+	</property>
+</block>
+
+<block name="SprungRabbitTrap">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Extends" value="RabbitTrap"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="199"/>
+		<property class="UpgradeBlock">
+		<property name="ToBlock" value="BRabbitTrap"/>
+		<property name="Item" value="AnimalFeed"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="1"/>
+		<property name="Texture" value="68,68,68,68,68,68" />
+	</property>
+</block>
+
+</append>
+</configs>

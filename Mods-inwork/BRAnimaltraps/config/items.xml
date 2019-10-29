@@ -1,0 +1,45 @@
+<configs>
+<append xpath="/items">
+<!-- Start ChickenCoop Items-->
+
+<item name="AnimalBaiter">
+	<property name="CustomIcon" value="bucketRiverWater"/>
+	<property name="CustomIconTint" value="111,173,19"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Msteel"/>
+	<property name="Weight" value="30"/>
+	<property name="Stacknumber" value="50"/> <!-- STK loot -->
+	<property name="EconomicValue" value="100"/>
+	<property name="Group" value="Resources"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value=".25"/> <!-- Repair actions still need the delay amount -->
+		<property name="Repair_amount" value="0"/>
+		<property name="Upgrade_hit_offset" value="-3"/>
+		<!--<property name="Sound_start" value="repair_block"/>-->
+		<property name="Allowed_upgrade_items" value="AnimalFeed"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+	</property>
+	<effect_group name="Base Effects">
+		<passive_effect name="DegradationMax" operation="base_set" value="6000"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+	</effect_group>
+</item>
+
+<item name="AnimalFeed">
+	<property name="CustomIcon" value="plantedCorn1"/>
+	<property name="CustomIconTint" value="200,219,168"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Msteel"/>
+	<property name="Weight" value="30"/>
+	<property name="Stacknumber" value="50"/> <!-- STK loot -->
+	<property name="EconomicValue" value="100"/>
+	<property name="Group" value="Resources"/>
+</item>
+<!-- End ChickenCoop Items-->
+</append>
+</configs>
