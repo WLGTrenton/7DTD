@@ -1,0 +1,35 @@
+<item id="1486" name="desielEngine">
+	<property name="PartType" value="Receiver"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="CustomIcon" value="smallEngine" />
+    <property name="CustomIconTint" value="0,200,255" />
+	<property name="Material" value="Msteel"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Weight" value="100"/>
+	<property name="EconomicValue" value="1500"/>
+	<property name="Group" value="Resources"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="2000,8000"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
+
+<!-- Only needed if not useing Fusion Blocks
+<item id="1488" name="dynaliner">
+	<property name="CustomIcon" value="militaryFiber"/>
+	<property name="CustomIconTint" value="200,200,255"/>
+	<property name="Meshfile" value="Items/Crafting/cloth"/>
+	<property name="RandomTintColor1" value="200,200,255"/>
+	<property name="Material" value="clay"/>
+	<property name="HoldType" value="14"/>
+	<property name="Stacknumber" value="50"/>
+	<property name="RepairAmount" value="100"/>
+	<property name="FuelValue" value="0"/>
+	<property name="Weight" value="5"/>
+	<property name="EconomicValue" value="1250"/>
+</item>
+-->

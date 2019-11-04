@@ -1,0 +1,30 @@
+<!--Start AdminTV -->
+<block id="1716" name="AdminTV">
+	<property name="Class" value="Campfire"/>
+	<property name="Material" value="MelectronicParts"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Furniture/tv" param1="main_mesh"/>
+	<property name="CustomIcon" value="tv"/>
+	<property name="CustomIconTint" value="0,255,0" />
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Weight" value="7"/>
+	<property class="Workstation">
+	    <property name="CraftingAreaRecipes" value="AdminTV"/>
+		<property name="Modules" value="tools,output,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	</property>
+	<property class="RepairItems">
+		<property name="scrapPlastics" value="1"/>
+		<property name="electricParts" value="1"/>
+	</property>
+	<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble"/> <!-- HV: mounted fluorescent lamp -->
+	<drop event="Harvest" name="electronicParts" count="1,2" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapPlastics" count="2"/>
+	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="DescriptionKey" value="furnitureGroupDesc"/>
+</block>
+<!--End AdminTV -->

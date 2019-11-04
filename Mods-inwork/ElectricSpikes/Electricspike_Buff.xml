@@ -1,0 +1,6 @@
+<buff id="electricspike" duration="4.5" stack="discard" debuffif="ShockAmount equals 0" buffif="ShockAmount greater 0"
+	actions="attach(ParticleEffects/p_electric_shock, @impact)" castsound="electric_fence_impact"
+	icon="ui_game_symbol_electric_power" name_key="Ouch!, Pointy Shocky Things!" description_key="Ouch!, Pointy Shocky Things!" tooltip_key="Ouch!, Pointy Shocky Things!">
+	<modify id="0" stat="health" amount="-5" rate="0.5"/>
+	<modify id="1" stat="speedmodifier" mulValue="0.25" duration="3.2"/>
+</buff>

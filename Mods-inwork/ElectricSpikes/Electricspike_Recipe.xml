@@ -1,0 +1,6 @@
+<recipe name="ElectricSpike" count="1" craft_time="120" craft_area="workbench">
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="electricParts" count="10"/>
+	<ingredient name="electronicParts" count="5"/>
+	<ingredient name="forgedIron" count="100"/>
+</recipe>

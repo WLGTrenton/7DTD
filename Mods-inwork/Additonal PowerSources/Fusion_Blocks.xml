@@ -1,0 +1,79 @@
+<!-- Start FusionReactor-->
+<block id="1720" name="FusionReactor">
+	<property name="Class" value="Generator"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="CustomIcon" value="controlPanelBase01" />
+	<property name="CustomIconTint" value="0,0,255" />
+	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Industrial/control_panel_base_01" param1="main_mesh"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="DescriptionKey" value="powerSourceDesc"/>
+	<property name="MaxFuel" value="6000"/>
+	<property name="OutputPerFuel" value="11250"/>
+	<property name="MaxPower" value="12500"/>
+	<property name="OutputPerStack" value="300"/>
+	<property name="SlotItem" value="fusionEngine"/>
+	<property name="Group" value="Science"/>
+	<property class="RepairItems">
+		<property name="dynaliner" value="2"/>
+		<property name="ductTape" value="1"/>
+		<property name="electronicParts" value="5"/>
+		<property name="irradiatedBlood" value="1"/>
+		<property name="forgedSteel" value="10"/>
+	</property>	
+	<drop event="Harvest" name="scrapIron" count="192" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="forgedIron" count="3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="1,2" prob="0.6" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="EconomicValue" value="500"/>
+</block>
+<!-- End FusionReactor-->
+
+<!-- Start FusionBank -->
+  <block id="1721" name="FusionBank">
+	<property name="Class" value="BatteryBank"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="CustomIcon" value="controlPanelTop05" />
+	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Industrial/control_panel_top_05" param1="main_mesh"/>
+	<property name="ModelOffset" value="0,1,0"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="MaxPower" value="6000"/>
+	<property name="InputPerTick" value="25"/>
+	<property name="ChargePerInput" value="1"/>
+	<property name="OutputPerStack" value="250"/>
+	<property name="OutputPerCharge" value="900"/>
+	<property name="SlotItem" value="fusionCell"/>
+	<property name="Group" value="Science"/>
+	<property class="RepairItems">
+		<property name="dynaliner" value="2"/>
+		<property name="ductTape" value="1"/>
+		<property name="electronicParts" value="5"/>
+		<property name="irradiatedBlood" value="1"/>
+		<property name="forgedSteel" value="10"/>
+	</property>
+	<drop event="Harvest" name="scrapIron" count="120" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="forgedIron" count="3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="2,3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="1,2" prob="0.6" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="TakeDelay" value="15"/>
+	<property name="EconomicValue" value="10000"/>
+</block>
+<!-- End FusionBank -->

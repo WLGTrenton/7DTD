@@ -1,0 +1,30 @@
+<block id="1704" name="SparkGlass"><!-- Dirty workaround for getting the particle and the block -->
+<property name="CustomIcon" value="glassShowerBlock"/>
+<property name="CustomIconTint" value="0,255,0" />
+<property name="Material" value="wood_weak" />
+<property name="Class" value="Particle"/>
+<property name="Shape" value="CubeCutout" />
+<property name="Mesh" value="transparent" />
+<property name="Texture" value="333" />
+<property name="RandomTintColor1" value="255,200,0"/>
+<property name="StabilitySupport" value="True"/>
+<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="SparkGlass"/>
+	<property name="PlantGrowing.GrowthRate" value="0"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.GrowOnTop" value="SparkGlass_effect"/>
+	<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+	</block>
+<block id="1705" name="SparkGlass_effect">
+<property name="Material" value="wood_weak" />
+<property name="Class" value="Particle"/>
+<property name="Material" value="air"/>
+<property name="Shape" value="Invisible"/>
+<property name="Texture" value="250"/>
+<property name="ParticleName" value="electric_shock"/>
+<property name="ParticleOffset" value="0.5,-0.5,0.5" />
+<property name="CanPickup" value="false"/>
+<drop event="Destroy" name="brokenGlass" count="0" />
+</block>

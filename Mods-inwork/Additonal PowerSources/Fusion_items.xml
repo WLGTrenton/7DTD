@@ -1,0 +1,76 @@
+<item id="1487" name="fusionEngine">
+	<property name="PartType" value="Receiver"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="CustomIcon" value="smallEngine" />
+    <property name="CustomIconTint" value="0,0,255" />
+	<property name="Material" value="Msteel"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="HoldType" value="45"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Weight" value="100"/>
+	<property name="EconomicValue" value="25000"/>
+	<property name="Group" value="Resources"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="5000,18000"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</item>
+
+<item id="1488" name="dynaliner">
+	<property name="CustomIcon" value="militaryFiber"/>
+	<property name="CustomIconTint" value="200,200,255"/>
+	<property name="Meshfile" value="Items/Crafting/cloth"/>
+	<property name="RandomTintColor1" value="200,200,255"/>
+	<property name="Material" value="clay"/>
+	<property name="HoldType" value="14"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="RepairAmount" value="100"/>
+	<property name="FuelValue" value="0"/>
+	<property name="Weight" value="5"/>
+	<property name="EconomicValue" value="1250"/>
+</item>
+
+<item id="1489" name="irradiatedBlood">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="CustomIcon" value="bloodBag"/>
+	<property name="CustomIconTint" value="0,255,0"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="250"/> <!-- STK resource -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="HoldType" value="45"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="100"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="megaCrushBuff,internalBleeding,infection3,painkillerBuff,zombieRadiatedBuff40"/>
+		<property name="Gain_sickness" value="600"/>
+	</property>
+	<property name="ActionSkillGroup" value="Medicine"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="CraftingIngredientExp" value="3"/>
+	<property name="Group" value="Science"/>
+	<property name="ActionExp" value="10"/>
+</item>
+
+<item id="1490" name="fusionCell">
+	<property name="CustomIcon" value="solarCell"/>
+	<property name="CustomIconTint" value="0,255,0"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="HoldType" value="45"/>
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="25000"/>
+	<property name="Group" value="Resources"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="5000,18000"/>
+	</property>
+</item>

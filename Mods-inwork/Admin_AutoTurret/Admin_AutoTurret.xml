@@ -1,0 +1,57 @@
+<block id="1715" name="Admin_AutoTurret">
+	<property name="Class" value="Ranged"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="OnlySimpleRotations" value="true"/> 
+	<property name="AmmoItem" value="9mmBullet"/>-->
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="MaxDistance" value="60"/>
+	<property name="EntityDamage" value="850"/> 
+	<property name="BlockDamage" value="0"/>
+	<property name="RaySpread" value="0"/> 
+	<property name="BustRoundCount" value="25"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value=".1"/>
+	<property name="OvershootTime" value="0.1"/>
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.1"/>
+
+	<property name="YawRange" value="120"/>
+	<property name="PitchRange" value="120"/>
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="8"/>
+	<property name="DamageBonus.glass" value="0"/>
+	<property name="DamageBonus.wood" value="0"/>
+	<property name="DamageBonus.earth" value="0"/>
+	<property name="DamageBonus.stone" value="0"/>
+	<property name="DamageBonus.metal" value="0"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+	<property name="FireSound" value="crossbow_fire"/>
+	<property name="RequiredPower" value="1"/>
+
+	<property class="RepairItems">
+		<property name="forgedIron" value="12"/>
+		<property name="mechanicalParts" value="2"/>
+		<property name="electricParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="10,40" prob="1"/>
+	<drop event="Destroy" count="0"/>
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="3000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+</block>

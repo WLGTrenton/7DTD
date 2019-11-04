@@ -1,0 +1,16 @@
+<!-- Start Desiel -->
+<recipe name="desielEngine" count="1" craft_time="1800" craft_area="workbench">
+	<ingredient name="dynaliner" count="1"/>
+	<ingredient name="ductTape" count="15"/>
+	<ingredient name="electricParts" count="20"/>
+	<ingredient name="mechanicalParts" count="40"/>
+	<ingredient name="forgedSteel" count="20"/>
+</recipe>
+<recipe name="desielGenerator" count="1" craft_time="3600" craft_area="workbench">
+	<ingredient name="dynaliner" count="1"/>
+	<ingredient name="electricParts" count="15"/>
+	<ingredient name="electronicParts" count="20"/>
+	<ingredient name="mechanicalParts" count="40"/>
+	<ingredient name="forgedSteel" count="20"/>
+</recipe>
+<!-- End Desiel -->

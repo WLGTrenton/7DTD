@@ -1,0 +1,33 @@
+<!-- Start Fusion -->
+<recipe name="FusionReactor" count="1" craft_time="14400" craft_area="workbench">
+	<ingredient name="dynaliner" count="100"/>
+	<ingredient name="ductTape" count="125"/>
+	<ingredient name="electronicParts" count="125"/>
+	<ingredient name="irradiatedBlood" count="50"/>
+	<ingredient name="forgedSteel" count="900"/>
+</recipe>
+
+<recipe name="FusionBank" count="1" craft_time="7200" craft_area="workbench">
+	<ingredient name="dynaliner" count="25"/>
+	<ingredient name="ductTape" count="50"/>
+	<ingredient name="electronicParts" count="75"/>
+	<ingredient name="irradiatedBlood" count="15"/>
+	<ingredient name="forgedSteel" count="225"/>
+</recipe>
+
+<recipe name="fusionEngine" count="1" craft_time="3600" craft_area="workbench">
+	<ingredient name="dynaliner" count="20"/>
+	<ingredient name="ductTape" count="15"/>
+	<ingredient name="electronicParts" count="20"/>
+	<ingredient name="irradiatedBlood" count="10"/>
+	<ingredient name="forgedSteel" count="100"/>
+</recipe>
+
+<recipe name="fusionCell" count="1" craft_time="1800" craft_area="workbench">
+	<ingredient name="glassBusinessSheet" count="200"/>
+	<ingredient name="ductTape" count="6"/>
+	<ingredient name="electronicParts" count="5"/>
+	<ingredient name="irradiatedBlood" count="5"/>
+	<ingredient name="forgedSteel" count="25"/>
+</recipe>
+<!-- End Fusion -->

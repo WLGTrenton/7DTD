@@ -1,0 +1,108 @@
+<!-- Start AdminTV -->
+	<window name="AdminTVRules"  pos="-800,450" width="1600" height="1200" anchor="CenterCenter" panel="Center" cursor_area="true" >
+		<panel name="header" pos="2,0" height="0" depth="0" backgroundspritename="ui_game_panel_header">
+				<texture name="BRBG01" depth="0" size="1600,800" texture="@https://cdn.discordapp.com/attachments/416819137138917377/457675877208162304/BR7dtdRules.png" material="Materials/Transparent Colored" /> <!-- Only Change the URL to point to the correct the updated image -->
+		</panel>
+
+		<rect name="content" depth="0" pos="0,-43" height="0">
+			<grid name="journalList" rows="0" cols="0" pos="-3000,-49" width="0" height="0" cell_width="0" cell_height="0"  repeat_content="true" arrangement="vertical" normal_color="[iconColor]" disabled_color="[iconColor]" controller="WorkstationToolGrid" >
+				<journal_entry name="0" />
+			</grid>
+		</rect>
+	</window>
+    
+<!--Do not change anything below this -->
+	<window name="windowCraftingListAdminTV"  width="0" height="0" controller="CraftingListInfo" panel="Right" cursor_area="true" >
+		<panel name="content" width="100%" height="650" depth="1" pos="-5000,-43" on_scroll="true" disableautobackground="true">
+
+			<rect depth="2" name="categorySelector" width="0" height="44" pos="-3000,-6">
+				<grid name="categories" pos="2,-7" rows="1" cols="9" width="0" height="0" cell_width="0" cell_height="0" repeat_content="true" controller="CategoryList">
+					<category_icon />
+				</grid>
+			</rect>
+
+			<rect depth="3" name="searchControls" width="0" height="0" pos="3000,-52">
+				<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3000,3" width="0" height="0" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[darkGrey]" type="sliced" />
+				<button depth="4" name="favorites" style="icon30px, press" pos="3000,-22"  pivot="center" sound="[paging_click]" tooltip="Favorites" tooltip_key="lblFavorites" collider_scale="1.5" />
+				<panel pos="3000,0" width="0" disableautobackground="true">
+					<sprite depth="4" name="searchIcon" style="icon30px" pos="3000,-22"  pivot="center"/>
+					<recipe_search depth="5" name="searchInput"/>
+				</panel>
+
+				<panel pos="3000,0" width="0" height="0" disableautobackground="true">
+					<button depth="4" name="pageDown" style="icon30px, press" pos="20,-22"  pivot="center" sound="[paging_click]" />
+					<rect depth="4" pos="3000,-7" >
+						<sprite name="background" style="icon30px" color="[black]" type="sliced" />
+						<label depth="5" name="pageNumber" pos="3000, -3" width="0" height="0" text="1" font_size="26" justify="center"/>
+					</rect>
+					<button depth="4" name="pageUp" style="icon30px, press" pos="3000,-22"  pivot="center" sound="[paging_click]" />
+				</panel>
+			</rect>
+
+			<grid name="recipes" rows="0" cols="0" pos="3000,-98" width="0" height="0" cell_width="0" cell_height="0" controller="RecipeList" repeat_content="true" arrangement="vertical" >
+				<recipe_entry name="0"/>
+			</grid>
+		</panel>
+	</window>
+
+
+<window name="craftingInfoPanelAdminTV" width="603" height="427" controller="CraftingInfoWindow" style="crafting.info.window" panel="Right" cursor_area="true" >
+		<panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<sprite depth="2" name="windowIcon" style="icon32px" pos="4,-5" sprite="{itemgroupicon}"/>
+			<label style="header.name" text="{itemname}" />
+
+			<rect pos="350,0" name="requiredToolOverlay">
+				<sprite size="24,24" depth="2" name="requiredToolCheckmark" pos="0,-8" sprite="ui_game_symbol_check" color="[red]"/>
+				<label depth="2" pos="35,-8" name="requiredToolText" width="200" height="32" text="Required" text_key="xuiRequired" font_size="32" upper_case="true" justify="left"/>
+			</rect>
+		</panel>
+
+		<rect name="contentCraftingInfo" height="381" depth="1" pos="0,-46">
+			<sprite depth="5" name="backgroundMain" sprite="menu_empty3px" width="603" height="380" color="[black]" type="sliced" fillcenter="false" />
+			<rect depth="1" pos="3,-3" name="preview" width="147" height="147">
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="153" height="153" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="1" color="[darkGrey]" type="sliced" globalopacity="true" />
+				<sprite depth="2" name="itemPreview" width="120" height="83" atlas="ItemIconAtlas" sprite="{itemicon}" color="{itemicontint}" pos="13,-15" foregroundlayer="true"/>
+				<sprite depth="3" name="clockIcon" size="24,24" sprite="ui_game_symbol_clock" pos="25, -116" type="sliced" color="[iconColor]" foregroundlayer="true" />
+				<label depth="3" name="craftingTime" width="100" height="32" pos="55, -115" text="{craftingtime}" font_size="26" color="[beige]"/>
+			</rect>
+
+			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,-150" width="153" height="230" color="[black]" type="sliced" fillcenter="false" />
+			<grid name="itemActions" rows="4" cols="1" pos="4,-153" width="147" cell_width="147" cell_height="42" controller="ItemActionList">
+				<rect depth="1" name="actions" width="147" height="225">
+					<sprite color="[mediumGrey]" type="sliced" height="43" />
+					<rect name="recipeCraftCountControl" width="120" height="210" pos="27,0" controller="RecipeCraftCount">
+						<button depth="2" name="countDown" style="icon30px, press" pos="-5,-20" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]"/>
+						<count_control_input name="count_input" depth="2" pos="10,-5" />
+						<button depth="2" name="countUp" style="icon30px, press" pos="59,-20" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]"/>
+						<button depth="2" name="countMax" style="icon30px, press" pos="91,-20" sprite="ui_game_symbol_arrow_max" pivot="center" sound="[paging_click]"/>
+					</rect>
+				</rect>
+				<item_action_entry />
+				<item_action_entry />
+				<item_action_entry />
+				<item_action_entry />
+				<sprite depth="3" name="fillerBackground" height="15" color="[mediumGrey]" type="sliced"/>
+			</grid>
+			<rect depth="1" pos="153,-3" name="description" width="447" height="109">
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="453" height="115" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[mediumGrey]" type="sliced" />
+				<label depth="2" name="descriptionText" pos="6,-5" width="440" height="98" text="{itemdescription}" />
+			</rect>
+
+			<rect depth="1" pos="153,-115" name="ingredients" width="447" height="264">
+
+				<grid rows="6" width="447" height="266" cell_height="44" cell_width="447" controller="IngredientList" arrangement="vertical">
+					<ingredient_header/>
+					<ingredient_row name="0"/>
+					<ingredient_row name="1"/>
+					<ingredient_row name="2"/>
+					<ingredient_row name="3"/>
+					<ingredient_row name="4"/>
+				</grid>
+			</rect>
+
+		</rect>
+	</window>
+<!-- End AdminTV-->

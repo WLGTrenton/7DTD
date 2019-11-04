@@ -1,0 +1,26 @@
+<block id="xxxx" name="ElectricSpike">
+	<property name="Class" value="TrunkTip"/>
+	<property name="Damage" value="7"/>
+	<property name="Damage_received" value="40"/>
+	<property name="Material" value="Msteel"/>
+	<property name="MaxDamage" value="6000"/>
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="6"/>
+	<property name="Model" value="cone1m"/>
+	<property name="Texture" value="356,355,435,536,435,536"/>
+	<property name="ImposterExchange" value="imposterPyramid" param1="112"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="BuffsWhenWalkedOn" value="electricspike"/>
+	<property name="CustomUpgradeSound" value="place_block_metal"/>
+	<drop event="Destroy" name="scrapIron" count="10,20" prob="1"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="160"/>
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="10"/>
+		<property name="electricParts" value="3"/>
+		<property name="electronicParts" value="2"/>
+	</property>
+</block>

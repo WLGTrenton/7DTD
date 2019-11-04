@@ -1,0 +1,6 @@
+	<window_group name="workstation_AdminTV" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingListAdminTV" />
+			<window name="AdminTVRules" />
+			<window name="craftingInfoPanelAdminTV" />
+			<window name="windowNonPagingHeader" /> 
+	</window_group>
