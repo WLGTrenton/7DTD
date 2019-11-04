@@ -1,0 +1,19 @@
+<!-- Composter -->
+<configs>
+<append xpath="/blocks">
+<block name="PortableLantern1">
+	<property name="Extends" value="porchLight01" param1="HandleFace,DescriptionKey"/>
+	<property name="Class" value=""/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CanPickup" value="true"/>
+	<property name="CustomIcon" value="lanternDecorLight"/>
+	<property name="UnlockedBy" value="perkArtOfMiningLantern"/>
+	<property name="Material" value="Mglass"/>
+	<property name="Model" value="Entities/Lighting/lanternPlayerPrefab"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="TakeDelay" value="1"/>
+	<property name="Group" value="Science,Building,advBuilding"/>
+</block>
+</block>
+</append>
+</configs>
