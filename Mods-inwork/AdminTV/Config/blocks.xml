@@ -1,5 +1,6 @@
-<!--Start AdminTV -->
-<block id="1716" name="AdminTV">
+<configs>
+<append xpath="/blocks">
+<block name="BRAdminTV">
 	<property name="Class" value="Campfire"/>
 	<property name="Material" value="MelectronicParts"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -27,4 +28,5 @@
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 </block>
-<!--End AdminTV -->
+</append>
+</configs>
