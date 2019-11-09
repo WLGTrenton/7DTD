@@ -3,7 +3,7 @@
 <!-- Start AdminTV -->
 	<window name="AdminTVRules"  pos="-800,450" width="1600" height="1200" anchor="CenterCenter" panel="Center" cursor_area="true" >
 		<panel name="header" pos="2,0" height="0" depth="0" backgroundspritename="ui_game_panel_header">
-				<texture name="BRBG01" depth="0" size="1600,800" texture="@https://cdn.discordapp.com/attachments/416819137138917377/457675877208162304/BR7dtdRules.png" material="Materials/Transparent Colored" /> <!-- Only Change the URL to point to the correct updated image -->
+				<texture name="BRBG01" depth="0" size="1600,800" texture="@https://vsh65q.bn.files.1drv.com/y4mcFNupS3hZDqIG0H87suazzNKkfMeRu85Jeu8yrR75OoVPF899zbsB259jy7YLL85dTv1vNGeaUxCZnG7YhhfQWZ55Vrl8iW7wJvnzVLVgYgNLlXzlqeN1Fq9apk17C3rsqaNNq-Vw39vA34jiTJZX8E8WJoze7A8awnS7A_f9Ipv9EhszK5tM156OomG3jN8EBePBIUmmF0gHRM7ynhm1w?" material="Materials/Transparent Colored" /> <!-- Only Change the URL to point to the correct updated image -->
 		</panel>
 
 		<rect name="content" depth="0" pos="0,-43" height="0">
